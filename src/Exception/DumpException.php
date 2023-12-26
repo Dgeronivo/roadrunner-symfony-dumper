@@ -17,7 +17,7 @@ class DumpException extends \RuntimeException
         return $exception;
     }
 
-    public function __toString(): string
+    public function toString(): string
     {
         return implode(\PHP_EOL, $this->dumps);
     }
