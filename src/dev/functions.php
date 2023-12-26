@@ -18,5 +18,5 @@ function dd(mixed ...$vars)
         $dumps[] = $dumper->dump($varCloner->cloneVar($var), true);
     }
 
-    throw new DumpException(...$dumps);
+    throw DumpException::create(...$dumps);
 }
