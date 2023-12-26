@@ -24,7 +24,7 @@ class ExceptionSubscriber implements EventSubscriberInterface
         if ($event->getThrowable() instanceof DumpException) {
             $event->allowCustomResponseCode();
             $event->setResponse(
-                new Response($e, 200),
+                new Response($event->getThrowable(), 200),
             );
         }
     }
