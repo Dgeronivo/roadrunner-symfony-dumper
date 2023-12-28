@@ -1,0 +1,24 @@
+{
+    "name": "dgero/roadrunner-symfony-dumper",
+    "description": "Added dumps functionality for roadrunner with symfony",
+    "type": "symfony-bundle",
+    "keywords": ["dev"],
+    "authors": [
+        {
+            "name": "Dgero",
+            "email": "dgeronivo@gmail.com"
+        }
+    ],
+    "psr-4": {
+        "RoadrunnerDump\\": "src/"
+    },
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "require-dev": {
+        "php": ">=8.2",
+        "symfony/var-dumper": "^6.0 || ^7.0"
+    },
+    "support": {
+        "source": "https://github.com/Dgeronivo/roadrunner-symfony-dumper"
+    }
+}
