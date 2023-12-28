@@ -12,10 +12,11 @@ class DumpListener
 {
     public function __invoke(ExceptionEvent $event): void
     {
-        if ($event->getThrowable() instanceof DumpException) {
+        $exception = $event->getThrowable();
+        if ($exception instanceof DumpException) {
             $event->allowCustomResponseCode();
             $event->setResponse(
-                new Response($event->getThrowable(), 200),
+                new Response($exception->toString(), 200),
             );
         }
     }

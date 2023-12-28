@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace RoadrunnerDump;
 
-use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
+use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class RoadrunnerDumpBundle extends AbstractBundle
+class RoadrunnerDumpBundle extends Bundle
 {
 }
