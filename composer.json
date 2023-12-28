@@ -9,8 +9,13 @@
             "email": "dgeronivo@gmail.com"
         }
     ],
-    "psr-4": {
-        "RoadrunnerDump\\": "src/"
+    "autoload": {
+        "files": [
+            "src/dev/functions.php"
+        ],
+        "psr-4": {
+            "RoadrunnerDump\\": "src/"
+        }
     },
     "minimum-stability": "stable",
     "license": "MIT",
