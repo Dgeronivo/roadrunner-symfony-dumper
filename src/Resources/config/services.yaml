@@ -1,0 +1,4 @@
+services:
+    RoadrunnerDump\EventListener\DumpListener:
+        tags:
+            - { name: kernel.event_listener, event: kernel.exception }
